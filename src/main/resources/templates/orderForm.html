@@ -46,16 +46,16 @@
     <span class="validationError"
           th:if="${#fields.hasErrors('city')}"
           th:errors="*{city}">City Error</span>
-    <!-- tag::allButValidation[] -->
+
     <br/>
 
     <label for="state">State: </label>
     <input type="text" th:field="*{state}"/>
-    <!-- end::allButValidation[] -->
+
     <span class="validationError"
           th:if="${#fields.hasErrors('state')}"
           th:errors="*{state}">State Error</span>
-    <!-- tag::allButValidation[] -->
+
     <br/>
 
     <label for="zip">Zip code: </label>

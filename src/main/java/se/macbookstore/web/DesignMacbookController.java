@@ -1,5 +1,5 @@
 // tag::head[]
-package se.macbookstore;
+package se.macbookstore.web;
 
 import java.util.Arrays;
 import java.util.List;
@@ -13,7 +13,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import lombok.extern.slf4j.Slf4j;
+import se.macbookstore.Ingredient;
 import se.macbookstore.Ingredient.Type;
+import se.macbookstore.Macbook;
 
 
 @Slf4j

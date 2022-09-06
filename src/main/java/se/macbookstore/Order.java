@@ -3,13 +3,16 @@ package se.macbookstore;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
-
 import lombok.Data;
+
+import java.util.Date;
 
 
 @Data
 public class Order {
 
+    private Long id;
+    private Date placedAt;
     @NotNull(message="Name is required")
     private String name;
 
@@ -25,7 +28,7 @@ public class Order {
     @NotNull(message="Zip code is required")
     private String zip;
 
-    @CreditCardNumber(message="Not a valid credit card number")
+
     private String ccNumber;
 
 
